@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/patrickdmw/datahub-schemas/refs/heads/main/baseline.json"
+    }
+  ],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "goodParts",
+        "badParts"
+      ],
+      "properties": {
+        "goodParts": {
+          "type": "number",
+          "minimum": 0
+        },
+        "badParts": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

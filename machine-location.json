@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/patrickdmw/datahub-schemas/refs/heads/main/baseline.json"
+    }
+  ],
+  "properties": {
+    "data": {
+      "required": [
+        "currentPosition"
+      ],
+      "properties": {
+        "currentPosition": {
+          "$ref": "https://raw.githubusercontent.com/patrickdmw/datahub-schemas/refs/heads/main/point.json"
+        },
+        "previousPosition": {
+          "$ref": "https://raw.githubusercontent.com/patrickdmw/datahub-schemas/refs/heads/main/point.json"
+        }
+      }
+    }
+  }
+}
