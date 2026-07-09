@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/patrickdmw/datahub-schemas/refs/heads/main/baseline.json",
   "type": "object",
-  "required": ["uuid", "timestamp", "source", "data", "schema"],
+  "required": ["uuid", "timestamp", "source", "data"],
   "additionalProperties": true,
   "properties": {
     "uuid": {
